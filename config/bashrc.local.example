@@ -1,0 +1,29 @@
+# ~/.bashrc.local — machine-specific overrides (not committed)
+# Copied by scripts/link-configs.sh when missing.
+
+# --- WSL / Windows ---
+# alias gowindows='cd /mnt/c/Users/YOUR_USER'
+
+# --- Tokens (never commit real values) ---
+# export GITHUB_TOKEN='ghp_...'
+
+# --- Android SDK (WSL example) ---
+# export ANDROID_HOME=/mnt/c/Users/YOUR_USER/AppData/Local/Android/Sdk
+# export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH
+
+# --- TI Code Composer / SysConfig ---
+# alias ccs='"$HOME/ti/ccstool/ccs/theia/ccstudio"'
+# alias ccs-theia='"$HOME/ti/ccstool/ccs/theia/ccstudio"'
+# alias ccs-eclipse='"$HOME/ti/ccstool/ccs/eclipse/ccstudio"'
+# alias sysconfig="$HOME/ti/sysconfig/run_sysconfig.sh"
+# alias run_sysconfig_gui='$HOME/ti/sysconfig/sysconfig_gui.sh --product $HOME/ti/mspm0-sdk/.metadata/product.json'
+
+# --- Obsidian (just install-obsidian → ~/obsidian_local/Obsidian.AppImage) ---
+# alias obsidian='$HOME/obsidian_local/Obsidian.AppImage --no-sandbox'
+
+# --- PlantUML (just install-plantuml → apt plantuml on PATH) ---
+# alias plantuml-png='plantuml -tpng'
+# alias plantuml-svg='plantuml -tsvg'
+
+# --- Project shortcuts ---
+# alias just_global='just --justfile $HOME/workspace/dev/justfile --working-directory $HOME/workspace/dev/'

@@ -1,0 +1,6 @@
+*.log
+*.sock
+.plugins.lock
+session.json
+session-snapshots/
+voice.env

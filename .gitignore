@@ -1,0 +1,12 @@
+# Local overrides / machine state
+.bashrc.local
+*.bak
+*.bak.*
+.DS_Store
+
+# Accidental local secrets
+.env
+.env.*
+*.pem
+*_TOKEN*
+*_token*

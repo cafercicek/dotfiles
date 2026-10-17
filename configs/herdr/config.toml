@@ -1,0 +1,73 @@
+onboarding = false
+# herdr configuration
+# Place this file at ~/.config/herdr/config.toml
+
+[keys]
+prefix = "ctrl+space"
+previous_workspace = "alt+q"
+next_workspace = "alt+a"
+focus_agent = "alt+1..9"
+
+focus_pane_left = ["prefix+h", "alt+h"]
+focus_pane_down = ["prefix+j", "alt+j"]
+focus_pane_up = ["prefix+k", "alt+k"]
+focus_pane_right = ["prefix+l", "alt+l"]
+
+copy_mode = ["prefix+[", "alt+c"]
+goto = ["prefix+g", "alt+g"]
+new_workspace = ["prefix+shift+n", "alt+n"]
+new_tab = ["prefix+t", "alt+t"]
+previous_tab = ["prefix+p", "alt+p"]
+close_pane = ["prefix+x", "alt+x"]
+close_workspace = ["prefix+shift+d", "alt+shift+n"]
+resize_mode = ["prefix+r", "alt+r"]
+
+# Directional splits: L/J use built-ins; H/K split then swap into place.
+split_vertical = ["prefix+v", "alt+shift+l"]
+split_horizontal = ["prefix+minus", "alt+shift+j"]
+
+[[keys.command]]
+key = "alt+shift+h"
+type = "shell"
+command = "\"${HERDR_BIN_PATH:-herdr}\" pane split --direction right --focus && \"${HERDR_BIN_PATH:-herdr}\" pane swap --direction left"
+description = "split pane left"
+
+[[keys.command]]
+key = "alt+shift+k"
+type = "shell"
+command = "\"${HERDR_BIN_PATH:-herdr}\" pane split --direction down --focus && \"${HERDR_BIN_PATH:-herdr}\" pane swap --direction up"
+description = "split pane up"
+
+# Copy focused pane scrollback → side pane → paste into nvim.
+[[keys.command]]
+key = "alt+e"
+type = "shell"
+command = "$HOME/.config/herdr/alt-e-scrollback.sh"
+description = "copy pane → side nvim paste"
+
+# Voice toggle: Alt+V →EN, Alt+F →TR. Same key again = stop+paste.
+[[keys.command]]
+key = "alt+v"
+type = "shell"
+command = "$HOME/.config/herdr/voice-toggle.sh en"
+description = "voice toggle → English"
+
+[[keys.command]]
+key = "alt+f"
+type = "shell"
+command = "$HOME/.config/herdr/voice-toggle.sh tr"
+description = "voice toggle → Turkish"
+
+[ui]
+agent_panel_sort = "spaces"
+show_agent_labels_on_pane_borders = true
+
+[experimental]
+pane_history = false
+
+[ui.toast]
+delivery = "herdr"
+
+[theme]
+name = "terminal"
+auto_switch = false
