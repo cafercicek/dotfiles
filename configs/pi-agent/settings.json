@@ -1,15 +1,9 @@
 {
   "$schema": "https://pi.dev/schemas/settings.schema.json",
   "lastChangelogVersion": "1.3.0",
-  "defaultProvider": "opencode-go",
-  "defaultModel": "kimi-k3",
+  "defaultProvider": "openrouter",
+  "defaultModel": "moonshotai/kimi-k2.6",
   "defaultThinkingLevel": "low",
-  "enabledModels": [
-    "opencode-go/kimi-k3",
-    "opencode-go/claude-haiku-5-5",
-    "opencode-go/glm-5.3",
-    "opencode-go/deepseek-v4-pro"
-  ],
   "defaultProjectTrust": "ask",
   "theme": "elma",
   "hideThinkingBlock": true,
