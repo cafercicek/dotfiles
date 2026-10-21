@@ -18,6 +18,7 @@
   "doubleEscapeAction": "tree",
   "steeringMode": "one-at-a-time",
   "followUpMode": "one-at-a-time",
+  "tuiMode": "regular",
   "editorPaddingX": 1,
   "autocompleteMaxVisible": 8,
   "terminal": {
