@@ -11,7 +11,7 @@
     "opencode-go/deepseek-v4-pro"
   ],
   "defaultProjectTrust": "ask",
-  "theme": "light/elma",
+  "theme": "elma",
   "hideThinkingBlock": true,
   "quietStartup": "header",
   "collapseChangelog": true,
@@ -26,7 +26,7 @@
   "cacheWarming": "idle",
   "showCacheMissNotices": true,
   "compaction": {
-    "enabled": false,
+    "enabled": true,
     "reserveTokens": 16384,
     "keepRecentTokens": 20000
   },
