@@ -11,6 +11,7 @@ Monorepo — `configs/nvim` and `configs/herdr` live in-tree (no git submodules)
 | `~/.bashrc` | Symlink to `config/bashrc` |
 | `~/.config/nvim` | Symlink to `configs/nvim` |
 | `~/.config/herdr` | Symlink to `configs/herdr` |
+| `~/.pi/agent/{settings.json,AGENTS.md}` | Symlinks to `configs/pi-agent/*` |
 | apps + optional tools | `scripts/install-*.sh` via Just |
 
 Machine-specific paths (TI, Android, Obsidian, WSL) live in `~/.bashrc.local` (from `config/bashrc.local.example`).
@@ -20,7 +21,7 @@ Machine-specific paths (TI, Android, Obsidian, WSL) live in `~/.bashrc.local` (f
 Edit `config/install.config`:
 
 - `[apps]` — tools (`cargo`, `nvim`, `plantuml`, …)
-- `[configs]` — links (`bashrc`, `nvim`, `herdr`)
+- `[configs]` — links (`bashrc`, `nvim`, `herdr`, `pi`)
 
 Comment a line with `#` to skip it. Then:
 

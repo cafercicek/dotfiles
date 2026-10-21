@@ -10,3 +10,8 @@
 *.pem
 *_TOKEN*
 *_token*
+
+# Pi agent: never track credentials or session/model state
+configs/pi-agent/auth.json
+configs/pi-agent/sessions/
+configs/pi-agent/models-store.json
