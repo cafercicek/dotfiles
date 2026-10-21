@@ -11,7 +11,15 @@
   "doubleEscapeAction": "tree",
   "steeringMode": "one-at-a-time",
   "followUpMode": "one-at-a-time",
-  "showCacheMissNotices": false,
+
+  "editorPaddingX": 1,
+  "autocompleteMaxVisible": 8,
+  "terminal": {
+    "showTerminalProgress": true
+  },
+
+  "cacheWarming": "streaming",
+  "showCacheMissNotices": true,
   "compaction": {
     "enabled": true,
     "reserveTokens": 16384,
