@@ -7,8 +7,7 @@ description: Manage pi harness configuration (settings, themes, prompts, skills)
 
 Pi's user-level config lives in the dotfiles repo and is symlinked into `~/.pi/agent/`.
 
-- Repo: `/home/elma/worktree/dotfiles` (GitHub `cafercicek/dotfiles`, private)
-- Source of truth: `configs/pi-agent/` in the repo
+- Source of truth: `configs/pi-agent/` in this repo
 - Symlinked into `~/.pi/agent/`: `settings.json`, `AGENTS.md`, `themes/`, `prompts/`, `skills/`
 - Never tracked: `auth.json`, `sessions/`, `models-store.json`, `bin/`, `install/` (machine state; guarded in the repo's `.gitignore`)
 
@@ -16,9 +15,9 @@ Pi's user-level config lives in the dotfiles repo and is symlinked into `~/.pi/a
 
 1. Edit files under `configs/pi-agent/` — treat the repo as home, not `~/.pi/agent/`.
 2. After adding a new top-level item (e.g. a new directory), re-link with:
-   `bash /home/elma/worktree/dotfiles/scripts/link-configs.sh pi`
+   `bash scripts/link-configs.sh pi` (from the repo root)
 3. Tell the user to run `/reload` in pi to pick up the changes.
-4. Commit and push in the dotfiles repo so the change is tracked.
+4. Commit and push so the change is tracked.
 
 ## Notes
 
