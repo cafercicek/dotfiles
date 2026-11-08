@@ -62,6 +62,7 @@ exec bash
 | `just install-gh` | Install GitHub CLI (`gh`) |
 | `just util_git_identity "Name" you@example.com` | Set global `git` user.name / user.email |
 | `just util_ssh_key you@example.com` | Create `~/.ssh/id_ed25519` if missing; print public key |
+| `just util_autocompletion_just` | Write `~/.just-completion.bash` (sourced by `config/bashrc`) |
 | `just util_docker_user_access` | Add user to `docker` group (then re-login / `newgrp docker`) |
 | `just util_docker_login ghp_xxxx` | `docker login` to ghcr.io |
 | `just util_gh_login ghp_xxxx` | `gh auth login --with-token` |

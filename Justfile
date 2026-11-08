@@ -89,7 +89,7 @@ util_gh_login ARG:
 
 # Generate bash completions for just (~/.just-completion.bash).
 # config/bashrc already sources that file — does not append to ~/.bashrc.
-[private]
+# Usage: just util_autocompletion_just
 util_autocompletion_just:
     #!/usr/bin/env bash
     set -euo pipefail
