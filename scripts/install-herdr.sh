@@ -6,11 +6,20 @@ source "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/lib.sh"
 
 HERDR_CRATE="${HERDR_CRATE:-herdr}"
 
+inside_herdr() {
+  [[ "${HERDR_ENV:-}" == "1" ]] || [[ "${TERM_PROGRAM:-}" == "herdr" ]]
+}
+
 ensure_cargo_path
 
 if have_cmd herdr; then
   log "Current herdr: $(command -v herdr)"
   herdr --version 2>/dev/null || true
+  if inside_herdr; then
+    warn "Inside a herdr session — skip update (run later: herdr update)"
+    log "Done."
+    exit 0
+  fi
   log "Updating herdr..."
   herdr update
 else
