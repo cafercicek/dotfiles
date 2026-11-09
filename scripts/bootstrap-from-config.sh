@@ -27,6 +27,7 @@ run_app() {
     fzf) script="install-fzf.sh" ;;
     herdr) script="install-herdr.sh" ;;
     cursor-agent) script="install-cursor-agent.sh" ;;
+    pi) script="install-pi.sh" ;;
     clangd) script="install-clangd.sh" ;;
     plantuml) script="install-plantuml.sh" ;;
     obsidian) script="install-obsidian.sh" ;;

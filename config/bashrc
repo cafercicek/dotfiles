@@ -99,6 +99,10 @@ fi
 # === PATH Updates (before aliases that call tools on PATH) ===
 export PATH="/opt/nvim-linux-x86_64/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+# pi managed install + standalone Node (install-pi.sh) if present
+[ -d "$HOME/.pi/agent/bin" ] && export PATH="$HOME/.pi/agent/bin:$PATH"
+[ -d "${XDG_DATA_HOME:-$HOME/.local/share}/pi-node/current/bin" ] && \
+  export PATH="${XDG_DATA_HOME:-$HOME/.local/share}/pi-node/current/bin:$PATH"
 # cargo: prefer bin dir even if ~/.cargo/env is missing (rustup --no-modify-path)
 [ -d "$HOME/.cargo/bin" ] && export PATH="$HOME/.cargo/bin:$PATH"
 if [ -f "$HOME/.cargo/env" ]; then

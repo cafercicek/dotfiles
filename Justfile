@@ -39,6 +39,9 @@ install-herdr:
 install-cursor-agent:
     bash "{{root}}/scripts/install-cursor-agent.sh"
 
+install-pi:
+    bash "{{root}}/scripts/install-pi.sh"
+
 install-clangd:
     bash "{{root}}/scripts/install-clangd.sh"
 

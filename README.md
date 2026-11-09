@@ -12,6 +12,7 @@ Monorepo — `configs/nvim` and `configs/herdr` live in-tree (no git submodules)
 | `~/.config/nvim` | Symlink to `configs/nvim` |
 | `~/.config/herdr` | Symlink to `configs/herdr` |
 | `~/.pi/agent/*` | Symlinks to `configs/pi-agent/*` (settings, AGENTS.md, themes, prompts, skills) |
+| `pi` binary | `scripts/install-pi.sh` (official installer; needs Node.js ≥ 22.19 + npm) |
 | apps + optional tools | `scripts/install-*.sh` via Just |
 
 Machine-specific paths (TI, Android, Obsidian, WSL) live in `~/.bashrc.local` (from `config/bashrc.local.example`).
@@ -60,6 +61,7 @@ exec bash
 | `just install-plantuml` | apt PlantUML (+ JRE) |
 | `just install-obsidian` | Obsidian AppImage → `~/obsidian_local` |
 | `just install-gh` | Install GitHub CLI (`gh`) |
+| `just install-pi` | Install pi agent (`https://pi.dev/install.sh`; ensures Node 22.19+) |
 | `just util_git_identity "Name" you@example.com` | Set global `git` user.name / user.email |
 | `just util_ssh_key you@example.com` | Create `~/.ssh/id_ed25519` if missing; print public key |
 | `just util_autocompletion_just` | Write `~/.just-completion.bash` (sourced by `config/bashrc`) |

@@ -34,6 +34,7 @@ check fzf fzf
 check herdr herdr
 check agent agent
 check cursor cursor
+check pi pi
 check clangd clangd
 check plantuml plantuml
 
